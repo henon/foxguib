@@ -1,0 +1,228 @@
+---
+FX::Canvas:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_MOTION: !str  sent when the mouse moves; the message data is an FXEvent instance.  
+    SEL_PAINT: !str  sent when the canvas needs to be redrawn; the message data is an FXEvent instance.  
+FX::DirBox:
+    SEL_CHANGED: !str  sent when the current item changes; the message data is the new current directory.  
+    SEL_COMMAND: !str  sent when the current item changes; the message data is the new current directory.  
+FX::DirList:
+    SEL_CLOSED: !str  sent when a folder item is closed; the message data is a reference to the FXDirItem that was closed  
+    SEL_OPENED: !str  sent when a folder item is opened; the message data is a reference to the FXDirItem that was opened  
+FX::DriveBox:
+    SEL_CHANGED: !str  sent when the current item changes; the message data is the current drive  
+    SEL_COMMAND: !str  sent when a new item is selected from the list; the message data is the drive  
+FX::FileList:
+FX::Header:
+    SEL_CHANGED: !str  sent continuously while a header item is being resized, if the HEADER_TRACKING option was specified, or at the end of the resize if HEADER_TRACKING was not specfied. The message data is an integer indicating the index of the item being resized.  
+    SEL_COMMAND: !str  sent when a header item is clicked; the message data is an integer indicating the index of the current item.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_REPLACED: !str  sent when a header item is about to be replaced; the message data is an Integer indicating the index of the item to be replaced.  
+    SEL_INSERTED: !str  sent after a header item is inserted; the message data is an Integer indicating the index of the item that was inserted.  
+    SEL_DELETED: !str  sent when a header item is about to be removed; the message data is an Integer indicating the index of the item to be removed.  
+FX::HorizontalSeparator:
+FX::IconList:
+    SEL_CHANGED: !str  sent when the current list item changes; the message data is an Integer indicating the index of the current item.  
+    SEL_COMMAND: !str  sent when the current list item changes; the message data is an Integer indicating the index of the current item.  
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONPRESS: !str  sent when the right mouse button goes down; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONRELEASE: !str  sent when the right mouse button goes up; the message data is an FXEvent instance.  
+    SEL_CLICKED: !str  sent when a list item is single-clicked; the message data is an Integer indicating the index of the current item.  
+    SEL_DOUBLECLICKED: !str  sent when a list item is double-clicked; the message data is an Integer indicating the index of the current item.  
+    SEL_TRIPLECLICKED: !str  sent when a list item is triple-clicked; the message data is an Integer indicating the index of the current item.  
+    SEL_SELECTED: !str  sent when a list item is selected; the message data is an Integer indicating the index of the selected item.  
+    SEL_DESELECTED: !str  sent when a list item is deselected; the message data is an Integer indicating the index of the deselected item.  
+    SEL_REPLACED: !str  sent when a list item is about to be replaced; the message data is an Integer indicating the index of the item to be replaced.  
+    SEL_INSERTED: !str  sent after a list item is inserted; the message data is an Integer indicating the index of the item that was inserted.  
+    SEL_DELETED: !str  sent when a list item is about to be removed; the message data is an Integer indicating the index of the item to be removed.  
+FX::List:
+    SEL_CHANGED: !str  sent when the current list item changes; the message data is an Integer indicating the index of the current item.  
+    SEL_COMMAND: !str  sent when the current list item changes; the message data is an Integer indicating the index of the current item.  
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONPRESS: !str  sent when the right mouse button goes down; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONRELEASE: !str  sent when the right mouse button goes up; the message data is an FXEvent instance.  
+    SEL_CLICKED: !str  sent when a list item is single-clicked; the message data is an Integer indicating the index of the current item.  
+    SEL_DOUBLECLICKED: !str  sent when a list item is double-clicked; the message data is an Integer indicating the index of the current item.  
+    SEL_TRIPLECLICKED: !str  sent when a list item is triple-clicked; the message data is an Integer indicating the index of the current item.  
+    SEL_SELECTED: !str  sent when a list item is selected; the message data is an Integer indicating the index of the selected item.  
+    SEL_DESELECTED: !str  sent when a list item is deselected; the message data is an Integer indicating the index of the deselected item.  
+    SEL_REPLACED: !str  sent when a list item is about to be replaced; the message data is an Integer indicating the index of the item to be replaced.  
+    SEL_INSERTED: !str  sent after a list item is inserted; the message data is an Integer indicating the index of the item that was inserted.  
+    SEL_DELETED: !str  sent when a list item is about to be removed; the message data is an Integer indicating the index of the item to be removed.  
+FX::ListBox:
+    SEL_COMMAND: !str  sent when a new list item is clicked; the message data is the index of the selected item.  
+    SEL_CHANGED: !str  sent when a new list item is clicked; the message data is the index of the selected item.  
+FX::MenuButton:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+FX::Option:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent when this option is clicked; the message data is an FXEvent instance.  
+FX::OptionMenu:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+FX::ScrollArea:
+FX::TreeList:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONPRESS: !str  sent when the right mouse button goes down; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONRELEASE: !str  sent when the right mouse button goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent when a list item is clicked on; the message data is a reference to the item (an FXTreeItem instance).  
+    SEL_CLICKED: !str  sent when the left mouse button is single-clicked in the list; the message data is a reference to the item clicked (an FXTreeItem instance) or nil if no item was clicked.  
+    SEL_DOUBLECLICKED: !str  sent when the left mouse button is double-clicked in the list; the message data is a reference to the item clicked (an FXTreeItem instance) or nil if no item was clicked.  
+    SEL_TRIPLECLICKED: !str  sent when the left mouse button is triple-clicked in the list; the message data is a reference to the item clicked (an FXTreeItem instance) or nil if no item was clicked.  
+    SEL_OPENED: !str  sent when an item is opened; the message data is a reference to the item (an FXTreeItem instance).  
+    SEL_CLOSED: !str  sent when an item is closed; the message data is a reference to the item (an FXTreeItem instance).  
+    SEL_EXPANDED: !str  sent when a sub-tree is expanded; the message data is a reference to the root item for the sub-tree (an FXTreeItem instance).  
+    SEL_COLLAPSED: !str  sent when a sub-tree is collapsed; the message data is a reference to the root item for the sub-tree (an FXTreeItem instance).  
+    SEL_SELECTED: !str  sent when an item is selected; the message data is a reference to the item (an FXTreeItem instance).  
+    SEL_DESELECTED: !str  sent when an item is deselected; the message data is a reference to the item (an FXTreeItem instance).  
+    SEL_CHANGED: !str  sent when the current item changes; the message data is a reference to the current item (an FXTreeItem instance).  
+    SEL_INSERTED: !str  sent after an item is added to the list; the message data is a reference to the item (an FXTreeItem instance).  
+    SEL_DELETED: !str  sent before an item is removed from the list; the message data is a reference to the item (an FXTreeItem instance).  
+FX::VerticalSeparator:
+FX::VerticalFrame:
+FX::HorizontalFrame:
+FX::Packer:
+FX::GroupBox:
+FX::ScrollWindow:
+FX::Shutter:
+    SEL_COMMAND: !str  sent whenever a new shutter item is opened; the message data is an integer indicating the new currently displayed shutter item.  
+FX::ShutterItem:
+FX::Splitter:
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent at the end of a resize operation, to signal that the resize is complete  
+    SEL_CHANGED: !str  sent continuously while a resize operation is occurring  
+FX::Matrix:
+FX::MDIClient:
+    SEL_CHANGED: !str  sent when the active child changes; the message data is a reference to the new active child window (or nil if there is none)  
+FX::TabBar:
+    SEL_COMMAND: !str  sent whenever the current tab item changes; the message data is an integer indicating the new current tab item's index.  
+FX::TabBook:
+FX::TabItem:
+FX::Switcher:
+    SEL_COMMAND: !str  sent whenever the current (topmost) child window changes; the message data is an integer indicating the new current window's index.  
+FX::MenuBar:
+FX::ToolBar:
+FX::StatusBar:
+FX::StatusLine:
+    SEL_UPDATE: !str  Sent when the widget currently under the mouse cursor doesn't respond to a SEL_UPDATE message with identifier ID_QUERY_HELP, as described above.  
+FX::MenuBar:
+FX::MenuCaption:
+FX::MenuCascade:
+FX::MenuCommand:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent when the command is activated  
+FX::MenuSeparator:
+FX::MenuTitle:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+FX::MenuPane:
+FX::ArrowButton:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent when the button is clicked (or repeatedly while the button is held down, if the ARROW_REPEAT option is in effect).  
+FX::Button:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent when the button is clicked.  
+FX::CheckButton:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent when the button is clicked.  
+FX::ComboBox:
+    SEL_CHANGED: !str  sent when the text in the text field changes; the message data is a String containing the new text.  
+    SEL_COMMAND: !str  sent when a new item is selected from the list, or when a command message is sent from the text field; the message data is a String containing the new text.  
+FX::Dial:
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_CHANGED: !str  sent when the dial's value changes; the message data is the new value (an integer).  
+    SEL_COMMAND: !str  sent when the user stops changing the dial's value and releases the mouse button; the message data is the new value (an integer).  
+FX::Label:
+FX::RadioButton:
+    SEL_COMMAND: !str  sent when the radio button is pressed.  
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+FX::Text:
+    SEL_KEYPRESS: !str  sent when a key is pressed; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key is released; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_MIDDLEBUTTONPRESS: !str  sent when the middle mouse button goes down; the message data is an FXEvent instance.  
+    SEL_MIDDLEBUTTONRELEASE: !str  sent when the middle mouse button goes up; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONPRESS: !str  sent when the right mouse button goes down; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONRELEASE: !str  sent when the right mouse button goes up; the message data is an FXEvent instance.  
+    SEL_INSERTED: !str  sent after text is inserted into the text buffer; the message data is a two-element array indicating the position at which the text was inserted and the number of characters inserted.  
+    SEL_DELETED: !str  sent before text is removed from the text buffer; the message data is a two-element array indicating the position at which text will be removed and the number of characters to be removed.  
+    SEL_CHANGED: !str  sent when the contents of the text buffer change in any way; the message data is an integer indicating the cursor position.  
+    SEL_SELECTED: !str  sent after text is selected; the message data is a two-element array indicating the starting position of the selected text and the number of characters selected.  
+    SEL_DESELECTED: !str  sent before text is deselected; the message data is a two-element array indicating the starting position of the deselected text and the number of characters deselected.  
+FX::TextField:
+    SEL_COMMAND: !str  sent when the user presses the Enter key or tabs out of the text field; the message data is a String containing the text.  
+    SEL_CHANGED: !str  sent when the text changes; the message data is a String containing the text.  
+    SEL_VERIFY: !str  sent when the user attempts to enter new text in the text field; the message data is a String containing the proposed new text.  
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_MIDDLEBUTTONPRESS: !str  sent when the middle mouse button goes down; the message data is an FXEvent instance.  
+    SEL_MIDDLEBUTTONRELEASE: !str  sent when the middle mouse button goes up; the message data is an FXEvent instance.  
+FX::ToggleButton:
+    SEL_COMMAND: !str  sent when the toggle button is pressed.  
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+FX::Slider:
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_MIDDLEBUTTONPRESS: !str  sent when the middle mouse button goes down; the message data is an FXEvent instance.  
+    SEL_MIDDLEBUTTONRELEASE: !str  sent when the middle mouse button goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent at the end of a slider move; the message data is the new position of the slider (an Integer).  
+    SEL_CHANGED: !str  sent continuously while the slider is being moved; the message data is an integer indicating the current slider position.  
+FX::Spinner:
+    SEL_KEYPRESS: !str  sent when a key goes down; the message data is an FXEvent instance.  
+    SEL_KEYRELEASE: !str  sent when a key goes up; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_COMMAND: !str  sent whenever the spinner's value changes; the message data is an integer indicating the new spinner value.  
+    SEL_CHANGED: !str  sent whenever the text in the spinner's text field changes; the message data is an integer indicating the new spinner value.  
+FX::ScrollBar:
+    SEL_LEFTBUTTONPRESS: !str  sent when the left mouse button goes down; the message data is an FXEvent instance.  
+    SEL_LEFTBUTTONRELEASE: !str  sent when the left mouse button goes up; the message data is an FXEvent instance.  
+    SEL_MIDDLEBUTTONPRESS: !str  sent when the middle mouse button goes down; the message data is an FXEvent instance.  
+    SEL_MIDDLEBUTTONRELEASE: !str  sent when the middle mouse button goes up; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONPRESS: !str  sent when the right mouse button goes down; the message data is an FXEvent instance.  
+    SEL_RIGHTBUTTONRELEASE: !str  sent when the right mouse button goes up; the message data is an FXEvent instance.  
+    SEL_CHANGED: !str  sent continuously while the scroll bar is moving; the message data is an integer indicating the current position of the scroll bar.  
+    SEL_COMMAND: !str  sent at the end of a scrolling operation, to signal that the scrolling is complete. The message data is an integer indicating the new position of the scroll bar.  
+FX::ProgressBar:

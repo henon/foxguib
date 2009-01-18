@@ -1,0 +1,128 @@
+===========================================================
+foxGUIb v1.0.0 for FXRuby 1.6
+===========================================================
+
+* fixed: a bug that blocked the radio buttons in Generator Dialog
+* fixed: better error message when loading of libguib fails
+* added $VERBOSE=nil to overcome a bug in ruby 1.8.x that yields a whole lot 
+  of warnings when loading fxruby
+* fixed a bug in RangeProp
+
+===========================================================
+foxGUIb v0.7.1 for FXRuby 1.6
+===========================================================
+
+* fixed: numbers and constants weren't saved/loaded right
+* fixed: crash when deleting a radiobutton out of a 
+  radiomutex.
+
+===========================================================
+foxGUIb v0.7 for FXRuby 1.6
+===========================================================
+
+Summary:
+--------
+
+FOX 1.6 brings to you full unicode support. see: 
+  foxGUIb/test/unicode_test_japanese.rbin
+This release is tested against FXRuby 1.6.0
+I got some bug reports and most of them are fixed in this 
+release. Please keep sending bug reports to further improve
+foxGUIb.
+
+List of changes:
+----------------
+* restructured the source repository to be user centered. 
+  now the sources are in ./src and only the important files
+  are in the toplevel directory.
+* Fixed the bug that allowed to change properties of a 
+  deleted widget (caused a crash)
+* Fixed several bugs that led to crashes when typing 
+  improper values into the property manipulators. e.g.: 
+  backColor="bad input" instead of "200,255,255"
+* on startup foxGUIb logs important version infos to the 
+  log file. the log file is appended instead of replaced.
+  in case of a problem you can send me your logfile.
+* some code improvements. hope i didn't introduce more bugs
+* repository switched to svn.
+... the contracting design window issue (windows only) is 
+  still unfixed.
+
+===========================================================
+foxGUIb v0.6.2 for FXRuby 1.4.x (stable)
+===========================================================
+* fixed the "initial design window" isssue on windows.
+
+
+===========================================================
+foxGUIb v0.6.1 for FXRuby 1.4.x
+===========================================================
+* fixed the forgotten comma which caused a crash
+
+
+===========================================================
+foxGUIb v0.6 for FXRuby 1.4.x
+===========================================================
+* added widgets radiomutex menuradio and menucheck
+* validates widget names (whether suitable as instance var), lowercase default names
+* fixed the codegen-dialog startup bugs:
+* the suggested class name changes according to the selected root widget
+* codegen dialog protects settings by means of a checkboxthat toggles it readonly
+* fixed bug: "on XP, the code gen window opens rather low down on the screen"
+* context menu commands that are not supposed to be applied in certain situations are disabled (now foolproof ^^)
+* context menu is now also available in the layout for most of the widgets (that respond to LMB-press)
+* terminology: changed "paste/add under" to "paste/add inside"
+* fixed: crash on closing last open layout
+* fixed:  the 'ruby sequence' option for code generator was broken
+* fixed: crash on generate when document has been switched meanwhile.
+* newly created widget is allways highlighted blue
+* terminology: changed term for foxGUIb documents from 'Dialog' to 'Layout' in the userinterface
+* fixed: the copy-paste bug and removed backColor hacks that became obsolete because of the new backColor(=) singleton methods
+* added cut (to the options copy, paste and delete)
+* removed "place exact" by "paste under/ -before/ -after"
+* event editor: can now be started from context menu
+* fix: changed backColor to allways return the true color of the widget (not the blue selection color of foxGUIb).
+* externalized FX.rb as libGUIb and wrote an installer for it.
+* updated foxGUIb to use libGUIb14.rb
+* hacked mainwindow layouts to be always in front of foxGUIb mainwin
+* fixed: the mainwindow allways in front of guib hack introduced a new problem. mainwindows got generated as dialog boxes
+* eliminated include FX and include Fox from libGUIb. 
+* fixed bug in event_handler example
+
+
+--------------------------------------------------------------------
+v0.5.0 
+* Compatible with FXRuby1.4.4. Unfortunately this release is incompatible with 
+   old FXRuby versions <= 1.2.6. Send me a feature request if you need it.
+* New feature: "EventEditor". Event handling code can be written directly in
+   the EventEditor. Test running of the designed GUI with events is not included yet. 
+* The code generator supports events. See the event_handler.rbin example.
+* EventEditor shows documentation for each listed event in the FXRuby API
+* I polished foxGUIb's own GUI a bit. Looks quite professional now ;)
+* Most icons are now in TGA file format which can allways be loaded because TGA
+   support is built-in in the FOX library.
+* Fixed the startup crash on linux platforms.
+* Fixed "Save As" Bug
+Notes: Mike Parr is currently writing documentation for foxGUIb. The docu will be 
+included in the package in succeding versions. Thanks to all who encouraged me to 
+continue on foxGUIb!!
+--------------------------------------------------------------------
+v1_branch: (unstable)
+* completed module Direct Widget Manipulation that features
+  * insert mode: mouse and keyboard controllable insert cursor
+  * edit mode: mouse-over hovering, single/multiple select, recursive select
+     and mouse-drag-relink, keyboard relink of selected widget
+--------------------------------------------------------------------
+version 0.4.1: development release. (unstable)
+* fixed a critical bug in code-generator.rb (widgetname without quotes)
+--------------------------------------------------------------------
+version 0.4: development release. (unstable)
+* ported to fox12 - fxruby 1.2.6 but tried to be backward compatible to fox 1.0. that is:
+  previous foxGUIb version documents can be loaded.
+  NOTE: radiobuttons in groupboxes don't support radio behaviour any more.
+* code generator outputs version
+* fixed bug: crashes after switching to a loaded document.
+* Combobox#comboItems= now takes a newline seperated string
+* added widgets: MainWindow, Matrix
+--------------------------------------------------------------------
+Version 0.3: initial release.

@@ -1,0 +1,68 @@
+============================
+foxGUIb v1.0.0 Release Notes 
+============================
+
+We have been quite stable for 2 years now and I am wondering why I did not jump to version 1.0.0 earlier. 
+For this release only a few minor bugs have been fixed. 
+-- henon
+
+============================
+foxGUIb v0.7.1 Release Notes 
+============================
+
+sorry i have dropped a big bug while refactoring that broke
+load/save and copy/paste. it was subtle enought to slip
+through my testing and into the release unnoticed.
+(see changelog)
+
+hope this one is stable.
+-- henon
+
+==========================
+foxGUIb v0.7 Release Notes 
+==========================
+
+== What is foxGUIb? ==
+   foxGUIb is a GUI creator and code generator for FXRuby. It's a 
+   convenient tool that makes it easy to quickly build complex and 
+   good looking graphical user interfaces for Ruby.
+   
+== Whom is foxGUIb for? ==
+   * FXRuby newbies who want to experiment with the widgets and layouts.
+   * FXRuby experts who want to prototype parts of their GUI components rapidly.
+   ... ok, lets say everyone who wants to create a GUI with FXRuby ;)
+
+== What has changed? ==
+   * Fixed the bug that allowed to change properties of a 
+     deleted widget (caused a crash)
+   * Fixed several bugs that led to crashes when typing 
+     improper values into the property manipulators. e.g.: 
+     backColor="bad input" instead of "200,255,255"
+   * on startup foxGUIb logs important version infos to the 
+     log file. the log file is appended instead of replaced.
+     in case of a problem you can send me your logfile.
+   * some minor convenience fixes.
+   
+== Links: ==
+   Homepage:
+      http://fox-tool.rubyforge.org
+   Mike Parr's User Guide:
+      http://www.mikeparr.info/rubyguib/foxguibhome.htm
+   Download:
+      http://rubyforge.org/frs/?group_id=88
+
+== Copyright and License ==
+   foxGUIb is free software. Copyright (c) by Meinrad Recheis aka Henon
+   foxGUIb: Artistic License
+   libGUIb: lgpl
+   
+enjoy ;)
+-- henon
+
+
+
+Boring Disclaimer:
+
+THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, 
+INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND 
+FITNESS FOR A PARTICULAR PURPOSE.
