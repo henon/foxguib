@@ -81,10 +81,10 @@ def gen_widget_tree lang, treeitem, parent_name="parent"
 	wdg=@w[treeitem.to_s]
 	raise "widget #{treeitem} is nil! cannot generate code." unless wdg
 	if lang=="ruby"
-		i("#{wdg.class}.new(#{parent_name}){|w|")
-			w "@#{treeitem}=w"
-			w "w.wdg_name='#{treeitem}'"
-			wdg.generate_properties {|p| w p.to( lang) }
+		i("#{wdg.class}.new(#{parent_name}){|w_#{treeitem}|")
+			w "@#{treeitem}=w_#{treeitem}"
+			w "w_#{treeitem}.wdg_name='#{treeitem}'"
+			wdg.generate_properties {|p| w p.to( lang, treeitem) }
 			generate_behaviour wdg, lang, treeitem
 			treeitem.each{|child|
 				gen_widget_tree lang, child, "@#{treeitem}"
